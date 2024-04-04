@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+
+    <title>The Academic Arena</title>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="game-content">
+        <h1>Welcome to the Academic Arena</h1>
+        <p>Decode the messages and complete the challenge to emerge victorious.</p>
+        
+        <!-- Number Code 1 -->
+        <div id="challenge1" class="challenge">
+            <p>"In the hands of a scholar, mightier than a sword, this tool scripts the path to knowledge." </p>
+            <p>Decode the numbers to discover your first tool: <strong>16-5-14</strong></p>
+            <input type="text" id="answer1" placeholder="Your answer...">
+            <button onclick="checkAnswer1()">Submit</button>
+            <p id="feedback1"></p>
+        </div>
+        
+        <!-- Number Code 2 -->
+        <div id="challenge2" class="challenge">
+            <p> "A treasure trove of wisdom bound by spine, and its heart beats with knowledge."</p>
+            <p>Uncover the strategy with this sequence: <strong>2-15-15-11</strong></p>
+            <input type="text" id="answer2" placeholder="Your answer...">
+            <button onclick="checkAnswer2()">Submit</button>
+            <p id="feedback2"></p>
+        </div>
+        
+        <!-- Complete the Sentence Challenge -->
+        <div id="challenge3" class="challenge">
+            <p>This is a brainy <input type="text" id="blank1" placeholder=_____>, minus the <input type="text" id="blank2" placeholder="_____">.</p>
+            <button onclick="checkSentence()">Submit</button>
+            <p id="feedback3"></p>
+        </div>
+    </div>
+        <div class="decoding-key">
+            <h3>Decoding Key:</h3>
+            <p>Each number corresponds to a letter in the alphabet: A=1, B=2, C=3....</p>
+            <p>To decode a message, replace each number with its corresponding letter.</p>
+            <p><strong>Example:</strong> "8-5-12-12-15" translates to "HELLO".</p>
+        </div>
+    </div>
+
+
+
+
+    <div id="congratsPopup" class="popup-overlay" style="display:none;">
+        <div class="popup-content">
+            <h2>Congratulations!</h2>
+            <p>You've cracked all the codes &completed the Challenge.<br> Your degree is in the post, pending the SQA pays the postage 📜</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="game1.js"></script>
+</body>
+</html>

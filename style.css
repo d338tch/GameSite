@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "MedievalSharp", cursive;
+    background-image: url("/CardImage/paper2.png"); /* Path to your texture image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.medievalsharp-regular {
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+  .hover-red:hover {
+    color: red;
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    color: #333;
+    font-size: 40px;
+}
+
+main p {
+    color: #040404;
+    margin: 20px 0;
+    font-size: 25px; /* Adjust the font size as needed */
+}
+
+.cta-button {
+    background-color: #ff0000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 50px ;
+}
+
+.cta-button:hover {
+    background-color: #387c44;
+}
+
+
+
+
+

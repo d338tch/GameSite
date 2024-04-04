@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "MedievalSharp", cursive;
+    background-image: url("/CardImage/paper2.png"); /* Path to your texture image */
+    background-size: cover; /* Cover the entire page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Viewport Height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Adjust based on the height of your fixed elements */
+    box-sizing: border-box;
+
+
+}
+
+.game-container {
+    width: 80%;
+    max-width: 600px; /* Adjust based on your preference */
+    padding: 20px;
+    background-color: #ffffff80;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+     display: flex;
+    justify-content: space-between;
+}
+.game-content, .decoding-key {
+    padding: 20px;
+}
+
+.game-content {
+    flex-grow: 1; /* Takes up the majority of space */
+}
+
+.decoding-key {
+    width: 300px; /* Fixed width for the key */
+    height: fit-content;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: 20px; /* Adds some space between the game content and the key */
+    position: fixed; /* Makes the key stay in place while scrolling */
+    right: 0; /* Aligns the key to the right */
+    top: 0; /* Aligns the top of the key with the top of the viewport */
+}
+
+/* Additional styles for headers and paragraphs inside the decoding key for readability */
+.decoding-key h3, .decoding-key p {
+    margin: 10px 0;
+}
+.challenge {
+    background-color: #ffffff81;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    text-align: center; 
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: auto; /* Allows the box to grow based on content width */
+    max-width: 80%; /* Prevents the box from getting too wide on large screens */
+    text-align: center; /* Centers the text inside the popup */
+    display: inline-block; /* Allows the width to shrink to fit the content */
+    max-width: 80%; /* Max width to prevent it from getting too wide */
+    width: auto; /* Adjusts width according to the content */
+    right: auto; /* Ensure it doesn't pull to one side */
+    left: auto; /* Ensure it doesn't pull to one side */
+    margin: 0 auto; /* This adds equal margin to both left and right */
+}
+
+/* Basic confetti animation */
+@keyframes drop {
+    from { transform: translateY(-100vh); }
+    to { transform: translateY(100vh); }
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    animation: drop 1s infinite;
+    /* You can add more confetti pieces with different colors, positions, and animation delays */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
