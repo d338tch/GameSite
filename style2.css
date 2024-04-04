@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "MedievalSharp", cursive;
-    background-image: url("/CardImage/paper2.png"); /* Path to your texture image */
+    background-image: url("/GameSite/CardImage/paper2.png"); /* Path to your texture image */
     background-size: cover; /* Cover the entire page */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     height: 100vh; /* Viewport Height */
