@@ -5,7 +5,7 @@ body, html {
     height: 100vh;
     font-family: "MedievalSharp", cursive;
     align-items: flex-start; /* Align items to the top */
-    background-image: url("/CardImage/paper2.png"); /* Path to your texture image */
+    background-image: url("/GameSite/CardImage/paper2.png"); /* Path to your texture image */
     background-size: cover; /* Cover the entire page */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     position: relative;
