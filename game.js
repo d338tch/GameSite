@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide all cards after 5 seconds
         setTimeout(() => {
             cards.forEach(card => card.classList.remove('flip'));
-        }, 1500); // 5000 milliseconds = 5 seconds
+        }, 1500); 
     });
 
     function flipCard() {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 alert("You've selected the wrong pair. Please start again.");
                 unflipCards();
-            }, 500); // Gives time to memorize the cards
+            }, 500); 
         }
     }
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function restartGame() {
-        // Ensure there's time to see the Joker card before restarting
+        
         setTimeout(() => {
             cards.forEach(card => {
                 card.classList.remove('flip');
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setupNextButton() {
-        // Add the event listener for the 'Next' button only once
+        
         const nextButton = document.getElementById('nextButton');
         nextButton.removeEventListener('click', handleNextButtonClick); // Remove any existing listener to avoid duplicates
         nextButton.addEventListener('click', handleNextButtonClick);
