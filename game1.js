@@ -1,4 +1,4 @@
-// Tracking the completion of each challenge
+
 var challenge1Completed = false;
 var challenge2Completed = false;
 var challenge3Completed = false;
@@ -18,8 +18,8 @@ function checkAnswer2() {
     var answer = document.getElementById("answer2").value.toLowerCase();
     if (answer === "book") {
         document.getElementById("feedback2").innerText = "Correct!";
-        challenge2Completed = true; // Update the completion status
-        checkAllChallengesCompleted(); // Check if all challenges are completed
+        challenge2Completed = true; 
+        checkAllChallengesCompleted(); 
     } else {
         document.getElementById("feedback2").innerText = "Try again.";
     }
@@ -31,9 +31,9 @@ function checkSentence() {
     if (blank1 === "hunger games" && blank2 === "cardio") {
         document.getElementById("feedback3").innerText = "Well done!";
         challenge3Completed = true; 
-        checkAllChallengesCompleted(); 
+        checkAllChallengesCompleted();
     } else {
-        document.getElementById("feedback3").innerText = "Not quite right. Think about the hidden red text.";
+        document.getElementById("feedback3").innerText = "Not quite right. Think about the theme.";
     }
 }
 
@@ -53,14 +53,14 @@ function closePopup() {
     
 }
 
-// Function for confetti effect
+
 function addBasicConfetti() {
-    for (let i = 0; i < 200; i++) { //  200 pieces of confetti
+    for (let i = 0; i < 20; i++) { 
         const confettiPiece = document.createElement('div');
         confettiPiece.classList.add('confetti');
-        confettiPiece.style.left = `${Math.random() * 100}vw`; // Randomize starting position
-        confettiPiece.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; // Randomize color
-        confettiPiece.style.animationDuration = `${Math.random() * 2 + 1}s`; // Randomize animation duration
+        confettiPiece.style.left = `${Math.random() * 100}vw`; 
+        confettiPiece.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`; 
+        confettiPiece.style.animationDuration = `${Math.random() * 2 + 1}s`; 
         document.body.appendChild(confettiPiece);
         
         
