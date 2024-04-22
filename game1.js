@@ -46,6 +46,7 @@ function checkAllChallengesCompleted() {
 function showCongratsPopup() {
     document.getElementById("congratsPopup").style.display = "block";
     addBasicConfetti(); 
+}
 
 function closePopup() {
     document.getElementById("congratsPopup").style.display = "none";
