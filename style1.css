@@ -5,7 +5,7 @@ body, html {
     height: 100vh;
     font-family: "MedievalSharp", cursive;
     align-items: flex-start; /* Align items to the top */
-    background-image: url("/GameSite/CardImage/paper2.png"); /* Path to your texture image */
+    background-image: url("/GameSite/CardImage/paper2.png");
     background-size: cover; /* Cover the entire page */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     position: relative;
@@ -25,7 +25,7 @@ body, html {
   
 
   header {
-    padding-left: 210px; /* Add left padding to move header text over */
+    padding-left: 210px; 
     padding-top: 10px;
 
 }
@@ -36,11 +36,11 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 20px; /* Add padding to separate text and game */
+    padding: 0 20px;
 }
 
 .poem {
-    flex: 0 0 20%; /* Assign 20% of the width to the poem sidebar */
+    flex: 0 0 20%; 
     margin: 0px;
     padding-top: 2px;
     padding-left: 200px;
@@ -57,7 +57,7 @@ body, html {
 
 
 #reveal-button {
-    margin-top: 20px; /* Add space between button and modal */
+    margin-top: 20px; 
      background-color: #ff0000;
     color: rgb(255, 255, 255);
     border: none;
@@ -79,7 +79,7 @@ body, html {
 .memory-card {
     width: 150px;
     height: 200px;
-    margin: 5px 5px ; /* Adjust this value to change the space between cards */
+    margin: 5px 5px ; 
     border: none;
     perspective: 1000px;
     position: relative; 
@@ -113,13 +113,13 @@ body, html {
     transform: rotateY(180deg);
 }
 
-/* Adjust the .memory-card style to have position: relative; so the absolutely positioned images are relative to the card */
+
 .memory-card {
-    /* ... existing styles ... */
+   
     position: relative;
 }
 
-/* Add the back-face image which will show the back of the card */
+
 .memory-card .back-face {
     transform: rotateY(0);
 }
